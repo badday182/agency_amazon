@@ -1,4 +1,5 @@
 import ReviewCard from "./components/ReviewCard/ReviewCard";
+import reviewsData from "./dataForReviews";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -23,7 +24,6 @@ export default function App() {
       <div className="swiper-box">
         <Swiper
           cssMode={false}
-          // cssMode={true}
           navigation={true}
           slidesPerView={1}
           speed={500}
@@ -47,37 +47,11 @@ export default function App() {
             },
           }}
         >
-          <SwiperSlide>
-            <ReviewCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewCard />
-          </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
-          {/* <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard /> */}
+          {reviewsData.map((review) => (
+            <SwiperSlide key={review.id}>
+              <ReviewCard review={review} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
