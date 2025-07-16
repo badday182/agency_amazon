@@ -20,7 +20,7 @@ import {
 export default function App() {
   return (
     <div className="App">
-      <h1>Voices of Success with Sales Fortuna</h1>
+      <h1 className="reviewsHeader">Voices of Success with Sales Fortuna</h1>
       <div className="swiper-box">
         <Swiper
           cssMode={false}

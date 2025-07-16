@@ -15,6 +15,9 @@ p {
   overflow: hidden;
   /* background: url("./img/slider_bg/bg.jpg"); */
 }
+.reviewsHeader {
+  text-align: center;
+}
 .swiper {
   width: 100%;
   height: 100%;
