@@ -13,7 +13,6 @@
   &__image {
     width: 100%;
     height: 28%;
-    // background-color: #b6b1b1;
     background-image: url("../../../companys_logo/photo_2025-05-14_09-00-06 (5).jpg");
     background-position: 0 50%;
     background-repeat: no-repeat;
@@ -23,6 +22,7 @@
   .review-text {
     flex-grow: 1;
     position: relative;
+    margin-bottom: 15px;
     &::after {
       font-family: "Staatliches", sans-serif;
       content: "\201D";
@@ -31,7 +31,7 @@
       width: 38px;
       height: 36px;
       bottom: -50px;
-      right: 0;
+      right: -20px;
       font-weight: 400;
       font-style: normal;
       font-size: 96px;
@@ -54,14 +54,12 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    // &__reviewer-photo {
     .reviewer_section__reviewer-photo {
       flex-grow: 0;
       flex-shrink: 0;
       flex-basis: 60.5px;
       height: 60.5px;
       border-radius: 50%;
-      // background-image: url("../../../avatars/photo_2025-05-14_09-00-06 (3).jpg");
       background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/70/Fayum-71.jpg");
       background-position: 0 0;
       background-repeat: no-repeat;
