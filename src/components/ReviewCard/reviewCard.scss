@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Staatliches:regular);
 
 .review-card {
-  width: 380px;
+  flex-basis: 380px;
+  flex-grow: 0;
   height: 502px;
   padding: 20px;
   border: 1px solid #b6b1b1;
@@ -9,6 +10,7 @@
   display: flex;
   flex-direction: column;
   line-height: 35px;
+  background: #ffffff;
 
   &__image {
     width: 100%;
@@ -89,7 +91,13 @@
     .reviewer__position {
       font-weight: 500;
       font-size: 20px;
-      min-height: 70px;
+      height: 70px;
+      overflow-y: auto;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      &::-webkit-scrollbar {
+        display: none; /* WebKit */
+      }
     }
   }
 }
@@ -100,14 +108,12 @@
       &__text {
         font-weight: 500;
         font-size: 20px;
-
         line-height: 1;
       }
     }
     .reviewer-section {
       .reviewer__position {
         font-size: 16px;
-        min-height: auto;
         line-height: 1;
       }
     }

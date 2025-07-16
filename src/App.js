@@ -29,7 +29,7 @@ export default function App() {
           speed={500}
           spaceBetween={200}
           effect="slide"
-          loop={true}
+          // loop={true}
           pagination={{
             clickable: true,
             dynamicBullets: true,

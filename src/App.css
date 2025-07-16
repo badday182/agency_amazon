@@ -5,6 +5,9 @@
 p {
   margin: 0;
 }
+.App {
+  background: url("./img/slider_bg/bg.jpg") no-repeat center fixed;
+}
 .swiper-box {
   max-width: 1370px;
   height: 550px;
@@ -13,7 +16,6 @@ p {
   padding-right: 100px;
   padding-left: 100px;
   overflow: hidden;
-  /* background: url("./img/slider_bg/bg.jpg"); */
 }
 .reviewsHeader {
   text-align: center;
