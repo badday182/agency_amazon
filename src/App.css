@@ -5,3 +5,15 @@
 p {
   margin: 0;
 }
+.swiper {
+  width: 1600px;
+  height: 550px;
+}
+.swiper-slide {
+  /* text-align: center; */
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
