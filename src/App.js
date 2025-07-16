@@ -9,6 +9,10 @@ function App() {
         <div className="arrow_back"></div>
         <div className="review-cards">
           <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
         </div>
         <div className="arrow_forward"></div>
       </div>
